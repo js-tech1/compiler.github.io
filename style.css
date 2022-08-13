@@ -1,0 +1,180 @@
+#cw {
+  position: fixed;
+  z-index: -1;
+}
+
+
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, lightblue 50%, lightyellow 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+  color: black;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .150em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1500em; /* Adjust as needed */
+  animation: 
+    typing 10s steps(80, end),
+    blink-caret 0.5s step-end infinite;
+    text-align: center;
+    font-size: 18px;
+    /*background-color: firebrick;*/
+    border-radius: 1px;
+   
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+		.cont{
+			
+			overflow: hidden;
+			background-color: white;
+			width: auto;
+			height: 100%;
+			white-space: nowrap;
+			border: 5px groove firebrick ;
+		}
+		.myareastyle{
+			display: inline-block;
+			padding: 10px;
+			margin: 5px;
+			color: black;
+			background-color:ghostwhite ;
+			resize: none;
+			border: transparent;
+			overflow: hidden;
+			font-size: 20px;
+			scroll-behavior: smooth;
+			overflow-y: scroll;
+
+		 	
+
+			
+			
+		}
+
+		.iframe{
+			display: inline-block;
+			padding: 10px;
+			margin: 5px;
+			overflow: hidden;
+			border: transparent;
+
+		}
+		.run{
+			padding: 5px;
+			margin: 5px;
+			background-color: firebrick;
+			color: white;
+			font-size: 18px;
+			font-style: oblique;
+			cursor: pointer;
+		}
+		.copy{
+			padding: 5px;
+			margin: 5px;
+			background-color: firebrick;
+			color: white;
+			font-size: 18px;
+			font-style: oblique;
+			cursor: pointer;
+		}
+
+		@media (min-width: 1200px) { 
+		.myareastyle{
+			height: 457px;
+			width: 50%;
+
+		} 
+		.iframe{
+			height: 450px;
+			width: 50%;
+		}
+	}
+	@media screen and (min-width: 992px) and(max-width: 1199px){
+		.myareastyle{
+			height: 500px;
+			width: 50%;
+		}
+		.iframe{
+			height: 500px;
+			width: 50%;
+		}
+	}
+	@media screen and (min-width: 768px)and (max-width:  991px){
+		.myareastyle{
+			height: 450px;
+			width: 50%;
+		}
+		.iframe{
+			height: 450px;
+			width: 50%;
+		}
+	}
+	@media screen and (max-width: 767px){
+		.myareastyle{
+			height: 384px;
+			width: 50%;
+		}
+		.iframe{
+			height: 384px;
+			width: 50%;
+		}
+		.run{
+			padding: 5px;
+			margin: 5px;
+			background-color: firebrick;
+			color: white;
+			font-size: 18px;
+			font-style: oblique;
+			cursor: pointer;
+		}
+	}
